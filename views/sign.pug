@@ -1,0 +1,20 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  style 
+    include ../static/base.css
+    include ../static/sign.css
+
+block content   
+  div.container
+    h1#formhead Sign Up
+    form(action="/Login" method="post" id="myform")
+      input(type="email", class="myinput" name ="email" placeholder="Enter Your Email")
+      input(type="text", class="myinput" name ="password" placeholder="Enter Your Password")
+      input(type="phone", class="myinput" name ="phone" placeholder="Enter Your Phone Number")
+      div
+        button(class="btn")
+          |Submit
+      div #[a(href="/sign") Don't have an account? Register!] 

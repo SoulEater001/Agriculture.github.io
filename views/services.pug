@@ -1,0 +1,179 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style 
+  style 
+    include ../static/base.css
+    include ../static/services.css
+
+block content 
+  section.Seller
+    div.container 
+      div.entryHead
+        h3 Enter Details About Machine Provider's
+      div.card 
+        form(action="/Food" method="post" id="entryform") 
+          input(type="Name" name="Name" Placeholder="Enter Seller's Name" class="myinput")
+          input(type="phone" name="Phone Number" Placeholder="Enter Seller's Number" class="myinput")
+          input(type="address" name="Phone Number" Placeholder="Enter Seller's Address" class="myinput")
+          input(type="text" name="machine" Placeholder="Enter Available Machines" class="myinput")
+          button(class="btn" type="submit") Add
+      div.entry
+        table(class="content-table")   
+          thead   
+            tr
+              th No. 
+              th Name
+              th Available Machine
+              th Address
+              th Number
+          tbody 
+            tr 
+              td 1
+              td BR Jcb Tractor
+              td JCB Tractor 
+              td Durg Chamdhkhuri
+              td 7947107141
+            tr(class="active-row")
+              td 2 
+              td Mithlesh TTractor
+              td Tractor,Thressor
+              td Durg 
+              td 7947151986
+            tr
+              td 3 
+              td Goverdhan Sahu
+              td Tractor
+              td Mungali
+              td 7947116384
+            tr(class="active-row")
+              td 4 
+              td Avinish Trasport
+              td Transport Truck
+              td Nagpur
+              td 7447146270
+
+    div.container  
+      div.entryHead
+        h3 Enter Details About Fertilizer Seller's
+      div.card
+        form(action="/Food" method="post" id="entryform") 
+          input(type="Name" name="ame" Placeholder="Enter Seller's Name" class="myinput")
+          input(type="phone" name="phone number" Placeholder="Enter Seller's Number" class="myinput")
+          input(type="address" name="address" Placeholder="Enter Seller's Address" class="myinput")
+          button(class="btn" type="submit") Add
+      div.entry
+        table(class="content-table") 
+          thead     
+            tr 
+              th No.
+              th Name
+              th Number 
+              th Address 
+          tbody   
+            tr 
+              td 1
+              td AkshatFertilizer
+              td 9131283492 
+              td Gogaon industrial area infront of essar petropump ,Ring Rd Number2,Raipur(492003) 
+            tr(class="active-row")
+              td 2 
+              td Kishan Fertilizer
+              td 9431269111 
+              td Jain Mandir Rd, Karmchari Nagar , New police line, Vidya Nagar, Durg , Chattisgarh (491001) 
+            tr
+              td 3 
+              td Lucky Krishi Kendra
+              td 7489859572 
+              td Gol Bazar , Rajnandgao,(491441) 
+            tr(class="active-row")
+              td 4 
+              td Naveen Krishi Kendra
+              td 9559021234 
+              td Main Rd,near Bilasa Chowk , Shanichari Bazar , bilaspur(495001) 
+            tr
+              td 5 
+              td Vardhman beej bhandar
+              td 7024331331 
+              td Raipur Naka ,Kawardha(491995) 
+            tr(class="active-row")
+              td 6 
+              td Krishi Vistar Kendra
+              td 9329812024 
+              td Address 
+            tr 
+              td 7
+              td Rathi Tradar
+              td 9424103302 
+              td Mandi-road,Gyan para rd,balod 
+           
+            
+    div.container  
+      div.entryHead
+        h3 Enter Details About Crop Buyer's
+      div.card
+        form(action="/Food" method="post" id="entryform") 
+          input(type="Name" name="Name" Placeholder="Enter Crop's Name" class="myinput")
+          input(type="address" name="Address" Placeholder="Enter Buyer's Address" class="myinput")
+          input(type="number" name="min" Placeholder="Enter min price" class="myinput")
+          input(type="number" name="max" Placeholder="Enter max price" class="myinput")
+          button(class="btn" type="submit") Add
+      div.entry
+        table(class="content-table")   
+          thead    
+            tr 
+              th No.
+              th Crop 
+              th Address 
+              th Min Price(Per Quintal) 
+              th Max Price(Per Quintal)
+          tbody 
+            tr
+              td 1 
+              td Peddy 
+              td Raipur 
+              td 1950
+              td 1955   
+            tr(class="active-row")
+              td - 
+              td Peddy 
+              td Durg 
+              td 1648
+              td 1653   
+            tr
+              td - 
+              td Peddy 
+              td Raigarh 
+              td 2040
+              td 2040   
+            tr(class="active-row")
+              td - 
+              td Peddy 
+              td Bilaspur 
+              td 1650
+              td 1800   
+            tr 
+              td 2
+              td Wheat 
+              td Raipur 
+              td 2200
+              td 2200   
+            tr(class="active-row")
+              td - 
+              td Wheat 
+              td Durg 
+              td 900
+              td 1000   
+            tr
+              td - 
+              td Wheat 
+              td Raigarh 
+              td 2000
+              td 2000   
+            tr(class="active-row")
+              td - 
+              td Wheat 
+              td Bilaspur 
+              td 2165
+              td 2165   

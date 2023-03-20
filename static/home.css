@@ -1,0 +1,14 @@
+.head{
+text-align: center;
+padding: 4px 6px;
+margin: 6px 8px;
+}
+
+.intro{
+    padding: 4px 6px;
+    margin: 6px 8px;
+    color: #256b5d;
+    font-size: 20px;
+    background-color: rgb(228, 215, 215);
+    height: 400px;
+}
